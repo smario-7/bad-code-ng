@@ -1,8 +1,6 @@
-#bad-code
+# bad-code.pl
 
 Creating by mario
-
-afdfj
 
 # MyOwnPageNg3
 
