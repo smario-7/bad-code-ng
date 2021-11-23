@@ -1,0 +1,20 @@
+.mario-button{
+  color: darkslateblue;
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(0,0,0,0.05);
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(211, 211, 250, 0.5);
+  animation: 2s;
+  transition: 1.1s;
+}
+.mario-button:hover {
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  animation: 2s;
+  transform: scale3d(1.2,1.2,1.2);
+  transition: 0.2s;
+}
+.mario-button:active{
+  color:cornflowerblue;
+  transition: 0.1s;
+}

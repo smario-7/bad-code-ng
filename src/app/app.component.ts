@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myOwnPageNg3';
+  // sidebar = false;
+  //
+  // showSidebar() {
+  //   this.sidebar = !this.sidebar;
+  // }
 }

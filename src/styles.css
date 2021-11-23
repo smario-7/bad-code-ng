@@ -1,1 +1,176 @@
-/* You can add global styles to this file, and also import other style files */
+@media screen and (max-width: 1800px){
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1600px){
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1400px){
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px){
+  html {
+    font-size: 12px;
+  }
+  .conteiner{
+    padding: 2rem 6rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html{
+    font-size: 11px;
+  }
+  .conteiner{
+    padding: 2rem 4rem!important;
+  }
+}
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 10px;
+  }
+  .conteiner{
+    padding: 2px 2rem!important;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background-color: #e5ebff;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.6rem;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+a {
+  all: unset;
+ }
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 0.6rem;
+  margin: 0;
+  font-size: 3rem;
+  box-shadow: 0 0.225rem 0.35rem rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  animation: transitionIn 0.9s;
+}
+
+.conteiner-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-white {
+  background-color: white;
+}
+.navbar-button {
+  background-color: white;
+  border: unset;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-image: url("assets/svg/list.svg");
+  background-size: cover;
+}
+.navbar-button:hover {
+  size: 2.6rem;
+  cursor: pointer;
+  color: powderblue;
+}
+/*.navbar-button:active {*/
+
+/*  color: rgba(0, 0 ,0 , 0.4) ;*/
+/*}*/
+.sidebar{
+  height: 100%;
+  width: 20rem;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: translateX(20rem);
+}
+.sidebar a{
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: 0.01s;
+}
+.sidebar a:hover {
+  color: gray;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.sidebar-drawer{
+  visibility: visible;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.sidebar .navbar-button {
+  display: flex;
+  justify-content: end;
+}
+.sidebar-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-weight: unset;
+  box-shadow: 0 0.225rem 0.35rem rgba(0, 0, 0, 0.15)
+}
+.sidebar .login{
+  display: flex;
+  justify-content: center;
+}
+.closebtn {
+  background-image: url("assets/svg/x.svg");
+}
+.conteiner {
+  position: relative;
+  /*offset-start: 60px;*/
+  padding: 2rem 10rem;
+  line-height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  animation: transitionIn 0.9s;
+}
+.conteiner .center{
+  align-items: center;
+  justify-content: end;
+}
+.conteiner .content{
+  margin-top: 5rem;
+}
+.footer {
+  padding: 0.5rem 10rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: white;
+  font-size: 1.5rem;
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  animation: transitionIn 0.9s;
+}
+
